@@ -17,7 +17,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ breadcrumbs }) => {
       <ul className="flex space-x-2">
         {breadcrumbs.map((breadcrumb, index) => (
           <li key={breadcrumb.path}>
-            <Link to={breadcrumb.path} className="text-blue-600">
+            <Link to={breadcrumb.path} className="text-green-600">
               {breadcrumb.label}
             </Link>
             {index < breadcrumbs.length - 1 && <span className="mx-2">/</span>}
